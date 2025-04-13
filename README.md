@@ -1,4 +1,4 @@
-#Solutions 
+# Solutions 
 
 ##1st task
 ```bash 
