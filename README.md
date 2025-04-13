@@ -1,5 +1,8 @@
 # Solutions 
 
+this is solution for the springboot/maven software job simulation of jpmc :
+https://github.com/vagabond-systems/forage-midas.git
+
 ## Just copy paste these in the submissions you dont need to run the tasks yourself
 
 ### 1st task
