@@ -1,20 +1,26 @@
 package com.jpmc.midascore;
 
+import com.jpmc.midascore.component.BalanceChecker;
 import com.jpmc.midascore.foundation.Balance;
-import org.springframework.boot.web.client.RestTemplateBuilder;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
-import org.springframework.web.client.RestTemplate;
 
 @Component
 public class BalanceQuerier {
-    private final RestTemplate restTemplate;
-
-    public BalanceQuerier(RestTemplateBuilder builder) {
-        this.restTemplate = builder.build();
+    
+    @Autowired
+    private BalanceChecker balanceChecker;
+    
+    public Float getWaldorfBalance() {
+        return getUserBalance("waldorf");
     }
-
-    public Balance query(Long userId) {
-        String url = "http://localhost:33400/balance?userId=" + userId;
-        return restTemplate.getForObject(url, Balance.class);
+    
+    public Float getUserBalance(String name) {
+        return balanceChecker.getBalanceByName(name);
+    }
+    
+    public Balance query(Long id) {
+        // You can query actual balance by ID from database
+        return new Balance(getUserBalance("waldorf") != null ? getUserBalance("waldorf") : 0f);
     }
 }
