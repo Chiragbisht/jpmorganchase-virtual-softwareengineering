@@ -1,28 +1,30 @@
 # Solutions 
 
-##1st task
+## Just copy paste these in the submissions you dont need to run the tasks yourself
+
+### 1st task
 ```bash 
 ---begin output ---
 1142725631254665682354316777216387420489
 ---end output ---
 ```
 
-2nd task
+### 2nd task
 ```bash 
 122.86, 42.87, 161.79, 22.22
 ```
 
-3rd task
+### 3rd task
 ```bash
 627
 ```
 
-4th task
+### 4th task
 ```bash
 3089
 ```
 
-5th task
+### 5th task
 ```bash
 ---begin output ---
 Balance {amount=0.0}
