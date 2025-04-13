@@ -1,6 +1,6 @@
-Solutions 
+#Solutions 
 
-1st task
+##1st task
 ```bash 
 ---begin output ---
 1142725631254665682354316777216387420489
